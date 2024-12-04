@@ -48,7 +48,7 @@ const getTasks = async (req, res) => {
 // Update a task with image upload
 const updateTask = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id } = req.params.id.trim();
     const { title, description, status } = req.body;
     const image = req.file ? req.file.path : undefined; // Update image if uploaded
 

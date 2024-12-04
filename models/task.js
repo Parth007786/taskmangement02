@@ -22,6 +22,6 @@ const taskSchema = new mongoose.Schema(
     },
     image: { type: String }
   },
-  { timestamps: true }
+  { timestamps: true, collection: "tasks" }
 );
-module.exports = mongoose.model("Task", taskSchema);
+module.exports = mongoose.model("Task", taskSchema, "tasks");
