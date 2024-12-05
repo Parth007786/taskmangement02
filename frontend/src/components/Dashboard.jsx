@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import { FaEdit, FaTrash, FaImage, FaEye } from "react-icons/fa";
 import "./Dashboard.css";
 import Sidebar from "../components/Sidebar";
