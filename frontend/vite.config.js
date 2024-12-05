@@ -11,5 +11,9 @@ export default defineConfig({
         secure: false
       }
     }
+  },
+  build: {
+    outDir: "dist", // Ensure this is the folder Render expects
+    emptyOutDir: true // Clears the output directory before building
   }
 });
